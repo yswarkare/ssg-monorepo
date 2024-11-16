@@ -1,0 +1,49 @@
+site_name: Interview Preparation
+# site_url: https://mydomain.org/mysite
+theme:
+  name: material
+
+markdown_extensions:
+  - md_in_html
+  - toc:
+      title: On this page
+      permalink_title: Anchor link to this section for reference
+      permalink: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+      toc_depth: 3
+  - tables
+  - footnotes
+  - def_list
+  - attr_list
+  - admonition
+  - abbr
+  - codehilite  
+  #  Python Markdown Extension
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/code.css
+
+nav:
+  - Home: index.md
+  - javascript-interview-questions-master: javascript-interview-questions-master/javascript-interview-questions-master.md
+  - reactjs-interview-questions-master: reactjs-interview-questions-master/reactjs-interview-questions-master.md
